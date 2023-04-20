@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:My_Quiz"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Quiz_Lamaev" Height="600" Width="650" >
+    <Grid Margin="1,0,-1,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="198*"/>
+            <ColumnDefinition Width="262*"/>
+            <ColumnDefinition Width="63*"/>
+        </Grid.ColumnDefinitions>
+
+        <WrapPanel Background="BlueViolet" Grid.ColumnSpan="4" Margin="0,0,0,483"  >
+            <TextBlock Text="Золотое кольцо" FontSize="15" Foreground="White" Height="23" Width="646" Margin="5,15"/>
+            <Button x:Name="B1" Content="100" Height="45" Width="54"/>
+
+
+        </WrapPanel>
+
+
     </Grid>
 </Window>

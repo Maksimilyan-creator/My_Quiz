@@ -20,9 +20,19 @@ namespace My_Quiz
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Player> players;
+        List<Questions> questions;
+        string str;
+        int d;
         public MainWindow()
         {
             InitializeComponent();
+            players = new List<Player>()
+            {
+                new Player("Первый_игрок",0)
+            };
+            players = players.ToList();
+
         }
     }
 }
